@@ -1,12 +1,14 @@
 #include <stdio.h>
 
+typedef int angkabulat;
 typedef struct Menu
 {
     char *nama;
-    int harga;
-    int jumlah;
+    angkabulat harga;
+    angkabulat jumlah;
 }pesanan;
 
+//struct Menu menu1, menu2
 pesanan menu1, menu2;
 
 int main()
@@ -21,7 +23,9 @@ int main()
     menu2.jumlah = 2;
 
     printf("%s\n", menu1.nama);
+    printf("%d\n", menu1.harga);
     printf("%s\n", menu2.nama);
+    printf("%d\n", menu2.harga);
 
     return 0;
 }
