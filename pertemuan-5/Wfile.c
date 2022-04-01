@@ -13,11 +13,11 @@ int main()
     }
 
     printf("\n Masukkan Inputan : ");
-    fgets(bufferedwriter, sizeof(bufferedwriter), stdin);
-    fputs(bufferedwriter,fpw);
+    // fgets(bufferedwriter, sizeof(bufferedwriter), stdin);
+    // fputs(bufferedwriter,fpw);
 
-    //scanf("%s", bufferedwriter);
-    // fprintf(fpw, "%s", bufferedwriter);
+    scanf("%[^\n]s", bufferedwriter);
+    fprintf(fpw, "%s", bufferedwriter);
     
     fclose(fpw);
 

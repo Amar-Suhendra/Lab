@@ -12,8 +12,8 @@ int main()
         exit(1);
     }
 
-    // fgets(buffer, 255, fptr);
-    fscanf(fptr,"%s", buffer);
+    fgets(buffer, 255, fptr);
+    //fscanf(fptr,"%s", buffer);
     
     printf("%s", buffer);
 
